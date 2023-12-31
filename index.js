@@ -1,18 +1,9 @@
 
 
-var num=document.querySelectorAll("button").length
-
-
-for ( var x=0 ;x<num ;x++){
-    document.querySelectorAll("button")[x].addEventListener('click',function() {
-        makesound(this.innerHTML);
-        flask(this.innerHTML)
-        }
-        );
 
 document.addEventListener('keydown',function(e){
     makesound(e.key);
-    flask(e.key)
+    flask(e.key);
 })
 
 
@@ -59,7 +50,7 @@ function makesound(key){
         }
         ;};
     
-}
+
 
 function flask(key){
     document.querySelector('.'+key).classList.toggle('pressed')
